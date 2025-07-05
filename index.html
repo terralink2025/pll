@@ -1,0 +1,304 @@
+<!DOCTYPE html><html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Мой Одностраничный Сайт</title>
+   
+   
+   <!--<style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }body {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+nav {
+  width: 220px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  height: 100vh;
+}
+nav h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  margin-bottom: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin-left: 220px;
+  padding: 40px;
+ flex-grow: 1;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #34495e;
+}
+
+section p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+  </style><style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }body {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+nav {
+  width: 220px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  height: 100vh;
+}
+nav h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  margin-bottom: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin-left: 220px;
+  padding: 40px;
+ flex-grow: 1;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #34495e;
+}
+
+section p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+  </style>
+-->
+
+
+</head>
+<body>
+  <nav>
+    <h2>Навигация</h2>
+    <ul>
+      <li><a href="#about">О нас</a></li>
+      <li><a href="#pon">Проверка PON</a></li>
+      <li><a href="#wifi">Проверка WI-FI (антена)</a></li>
+      <li><a href="#mkd">Проверка МКД</a></li>
+
+
+
+    </ul>
+  </nav>  <main>
+    <section id="about">
+      <h2 >О нас</h2>
+      <p>Добро пожаловать на наш сайт! Мы создаем красивые и функциональные веб-решения для вашего бизнеса. Наша команда — это профессионалы с большим опытом.</p>
+    </section><section id="pon">
+  <h2 class="center">Проверка PON</h2>
+  <p><div class="main__pon">
+
+    <p class="justify">
+        При отсутствии интернета необходимо проверить GPON терминал (ONT), а также проверить схему подключения роутера к ONT<br>    
+        Необходимо убедиться в следующем:<br>
+            •	Перезагрузить оборудование. Отключить от сети 220В блок питания антенны и блок питания роутера и включить обратно.<br>
+            •	GPON терминал (ONT) подключен к сети электропитания, кабель от GPON терминала подключен к порту WAN роутера (синий или желтый цвет).<br><br>
+            
+            <h2 class="center">Вид индикация на передней панели устройств.</h2><br>
+
+
+  <p class="justify">   
+      <b class="bold-text">POWER</span></b> должна постоянно гореть (включен). Включить питание в сеть 220.<br>
+      <b>PON</b> – должна гореть постоянно – линия исправна, если мигает, то проблема на линии. Попробовать (переподключить) зеленый коннектор оптического кабеля в терминале (вытащить и вставить обратно). Светодиод не горит – это означает неисправность устройства.<br>
+      <b>LOS</b> – не должна гореть.Если горит, моргает красным светом – это означает, обрыв на линии, в отдельных случаях может быть поврежден сам терминал.<br>
+      <b>LAN</b> светодиод моргает (локальная сеть — подключена). Если не горит, то связь с роутером отсутствует, - нужно проверить кабель от модема до роутера. А также включен ли роутер.
+    </p>  
+    <img src="./img/1.jpg" alt="Карьтнка1" class="main__pon-images" width="500px" height="300px">   
+    <p class="justify">
+        •	Если сигнал есть, но нет интернета — просим перегрузить роутер, не помогает перезагружаем ОНУ, вытащить <b>LAN</b> кабель и вставить обратно. Если и так не получается отправить инженера<br>
+        •	Все работает, но интернет плохой — просим проверить через <b>SpeedTest</b>, если выдает низкую скорость — тариф предлагаем более лучший.<br>
+        •	Все работает есть сессия, но нет значка WI-Fi — сзади роутера есть кнопка WI-Fi, попросить нажать и удерживать сек 20 подождать и спросить работает или нет — если нет отправить инженера<br>
+
+    </p>
+      
+</div>
+</section>
+
+<section id="wifi">
+  <h2 class="center">Проверка WI-FI (антена)</h2>
+  <p class="main__wifi-text">
+
+    <p class="justify"> При отсутствии интернета необходимо проверить блок питания антенны, а также проверить cхему 
+        подключения роутера к блоку питания антенны.Необходимо убедиться в следующем:<br> 
+            •	Проверьте включен ли блок питания антенны к сети электропитания. На блоке питания должен загореться светодиод.<br>
+            •	Проверить провод от антенны к блоку питания и роутеру. Необходимо сначала подключить провод, который спускается от антенны (с крыши дома и заходит во внутрь дома), к блоку питания антенны в разъем <b>POE</b>.<br>
+            •	Проверить провод от роутера к блоку питания антенны. Необходимо взять патч-корд (короткий кабель с коннекторами) и подключить его с одной стороны к разъему <b>LAN</b> блока питания антенны, с другой стороны к разъему <b>WAN</b> роутера.<br> 
+        </p><br>
+        <h2 class="center">Что делать, если у меня пропал интернет?</h2><br>
+
+        <p class="justify">
+            •	Перезагрузить оборудование. Отключить от сети 220В блок питания антенны и блок питания роутера и включить обратно.<br> 
+            •	Проверить правильность подключения кабелей к блоку питания антенны и Wi-Fi роутера, коннекторы должны плотно входить в разъемы до щелчка.<br>
+        </p>
+        <img src="./img/3.png" alt="Карьтнка3" class="main__pon-images" width="726px" height="434px">
+        
+        
+        <h2 class="center">Проверка через ip-адрес антенны:</h2><br>
+
+        <p class="justify">Логин абонента копируем ставим в сессию. Копируем <b>ip-адрес</b> сессии заходим через браузер на антенну, видим сигналы антенны. Если в пределах до <b>60</b> то нормально если нет, то меняем сектор.
+        Во вкладке <b>MAIN</b> есть 2 графика <b>WLAN</b> (кабель антенны) и <b>LAN</b> (кабель роутера). Если сессии нет, просим включить антенну, проверить кабели.</p><br>
+
+        <img src="./img/4.jpg" alt="Карьтнка3" class="main__pon-images" width="782px" height="461px">
+
+
+        <p>Меняем сектор - Перейти в <b>WIRELESS</b>, в пункте <b>SSID</b> нажать кнопку <b>SELECT</b>.</p><br>
+
+        <img src="./img/5.jpg" alt="Карьтнка3" class="main__pon-images" width="801px" height="446px">
+        
+        <p class="justify">Выбираем сектора с лучшим сигналом под названием <b>AIRTL</b> нажимаем на <b>Loсk to AP</b>, далее нажимаем на <b>Change</b>. Потом <b>Apply</b>.</p><br>
+
+        <img src="./img/6.jpg" alt="Карьтнка3" class="main__pon-images" width="801px" height="628px">
+        <img src="./img/7.jpg" alt="Карьтнка3" class="main__pon-images" width="801px" height="181px">
+
+        <p>Для перезагрузи заходим в <b>SYSTEM</b> и нажимаем <b>REBOOT</b></p><br>
+
+
+        <p class="justify">
+            •	Если сигнал с антенны плохой - перенаправить на другой сектор.<br> 
+            •	Если нет на секторе - отправить инженера.<br>
+            •	Когда переходим по ip-адресу антенны, смотрим есть ли роутер, если его нет, то просим вытащить LAN кабель и вставить обратно и просим вытащить блок питания роутера и вставить обратно.<br>
+            •	Если, нет сессии - проверить есть ли на секторе, если есть то - просим вытащить кабель POE если и так не работает просим вытащить питание роутера и вставить обратно, если и так не получается  отправить инженера с причиной посмотреть на месте.</p>
+
+<p class="justify">     Проверка скорости Антенны – <b>Tools > Speed test</b> для тарелки<br> 
+        - 185.x.4.17<br>
+        - user<br> 
+        - reader<br>
+</p>
+</div>
+</section>
+
+
+
+<section id="mkd">
+  <h2 class="center">Проверка МКД (FTTB)</h2> 
+            <p class="main__fttb-text">
+                <p>Заходим по ip адресу комутатора в комутатор, смотрим приходит ли МАК, если да, то просим перезагрузить не получается вытащить и засунуть кабель, опять не получается отправить инженера.</p><br>
+
+            <h2 class="main_h3">Квартирный коммутатор: ZyXEL</h2>
+            <p > Копируем IР-адрес в описание Lanbiiling2:<br>
+            1. Пример Адреса: 172.16.24.13<br>
+            2. Вставляем его в поиск гугла.<br>
+            3. Водим: admin<br>
+            4. Пароль 9sХv4Sm1Ue<br>
+            5. Переходим в : <b>Management > МАС Address Таble</b><br>
+        </p>
+                  
+             <img src="./img/f1.png" alt="Карьтнка3" class="main__pon-images" width="701px" height="423px">
+
+        <p> 6. Выбираем порт, он указан в учётку Биллинга.<br>
+            7. Нажимаем: Search<br>
+            8. Проверяем сессию в Lanbilling2<br>
+            9. Если МАК приходит, значит работает. Если нет, вытащить кабель из
+            роутера и обратно вставить.<br>
+            10. Просите абонента перезагрузить<br>
+        </p>   <br>
+
+
+            <h2 class="main_h3">Квартирный коммутатор: Еdgе-соге</h2><br>
+
+        <p> 1. Копируем IР-адрес в описание Lanbiiling2. (Пример Адреса: 172.16.24.95)<br>
+            4. Водим: admin<br>
+            5. Пароль 9sХv4Sm1Ue<br>
+            6. Заходим в <b>МАС Address > Dynamic > Interface > Роrt > Query</b><br>
+        </p> 
+
+            <img src="./img/f2.png" alt="Карьтнка3" class="main__pon-images" width="701px" height="364px">
+
+        <p> 7. Выбираем порт, он указан в учетке Lanbiiling2
+            </p>
+
+            <img src="./img/f3.png" alt="Карьтнка3" class="main__pon-images" width="701px" height="325px">
+
+        <p> 8. Проверяем сессию в Lanbiiling2. Сессия есть работает.
+            </p>
+
+            <img src="./img/f4.png" alt="Карьтнка3" class="main__pon-images" width="701px" height="414px">
+
+            <h2 class="main_h3">C-DATA-OLT 172.16.11.10 @PON1</h2>
+        <p> 1. PON подключение: используем конструктор Secure CRT<br>
+            2. PBeam-M5-300 @ Kart2_S-2 Радио подключение: Используем: UMMS.<br>
+            3. Проверяем есть ли сессия по ip-адресу. Копируем, вставляем в Поиск Браузера.<br>
+            4. MES-3500-24 (172.16.24.11) @ port 10. FTTB- подклю. Копируем ip-адрес и вставляем в Поиск Браузера.<br>
+        </p>  
+
+        <img src="./img/f5.png" alt="Карьтнка3" class="main__pon-images" width="702px" height="395px">
+
+    </div>
+</section>
+
+  </main>
+</body>
+</html>
